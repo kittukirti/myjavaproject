@@ -16,6 +16,7 @@ pipeline {
                     mvn compile
                     echo "Packaging started"
                     mvn package
+                    jar -cvf javaproject.war *
                     pwd
                 '''
             }
