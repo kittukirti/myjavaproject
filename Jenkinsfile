@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh '''
                     #!/bin/bash
-           
+                     pwd
                     cd /var/lib/jenkins/workspace/MyJavaCI/MyJavaProject
                     echo "Build started"
                     mvn compile
